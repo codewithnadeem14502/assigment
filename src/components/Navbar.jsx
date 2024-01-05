@@ -1,23 +1,59 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import Menubar from "../assets/menubar.png";
+import history from "../assets/history.png";
+import homelogo from "../assets/home.png";
+import catalog from "../assets/catalog.png";
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-5 flex justify-center items-center  rounded-t-2xl">
-      <div className="flex space-x-6">
-        <a href="/" className="hover:text-gray-300">
-          Home
-        </a>
-        <a href="/history" className="hover:text-gray-300">
-          History
-        </a>
-        <a href="/catalog" className="hover:text-gray-300">
-          Catalog
-        </a>
-        <a href="/menu" className="hover:text-gray-300">
-          Menu
-        </a>
+    <div className="md:hidden fixed bottom-0 left-0 w-full bg-blue-800 text-white p-3 flex justify-center items-center  rounded-t-2xl">
+      <div className="flex space-x-10">
+        <NavLink
+          to="/"
+          icon={homelogo}
+          label="Home"
+          currentPath={location.pathname}
+        />
+        <NavLink
+          to="/catalog"
+          icon={history}
+          label="Catalog"
+          currentPath={location.pathname}
+        />
+        <NavLink
+          to="/history"
+          icon={catalog}
+          label="History"
+          currentPath={location.pathname}
+        />
+        <NavLink
+          to="/menu"
+          icon={Menubar}
+          label="Menu"
+          currentPath={location.pathname}
+        />
       </div>
     </div>
+  );
+};
+
+const NavLink = ({ to, icon, label, currentPath }) => {
+  const isActive = currentPath === to;
+
+  return (
+    <Link
+      to={to}
+      className={`hover:bg-rgba-primary p-2 rounded-full relative ${
+        isActive ? "active-link" : ""
+      }`}
+    >
+      <img src={icon} alt={label} />
+
+      {isActive && <div className="active-indicator "></div>}
+    </Link>
   );
 };
 
