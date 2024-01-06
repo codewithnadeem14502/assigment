@@ -9,7 +9,10 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 w-full bg-blue-800 text-white p-3 flex justify-center items-center  rounded-t-2xl">
+    <div
+      className="md:hidden fixed bottom-0 left-0 w-full bg-blue-800 text-white p-3 flex justify-center items-center rounded-t-2xl"
+      style={{ zIndex: 10 }}
+    >
       <div className="flex space-x-10">
         <NavLink
           to="/"

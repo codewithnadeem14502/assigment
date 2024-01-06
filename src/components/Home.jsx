@@ -10,7 +10,7 @@ const Home = () => {
         </h1>
       </div>
 
-      <div className="md:hidden bg-blue-900 w-full h-[620px] p-5">
+      <div className="md:hidden bg-blue-900 w-full h-screen p-5 mb-10">
         {/* txt-content + profile image */}
         <div className="flex justify-between content-center">
           {/* text  */}
@@ -37,7 +37,9 @@ const Home = () => {
           </div>
         </div>
         {/* cards */}
-        <Carousel />
+        <div className="w-full h-[350px]  ">
+          <Carousel />
+        </div>
       </div>
     </>
   );
