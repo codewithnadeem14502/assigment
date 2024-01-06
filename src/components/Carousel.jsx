@@ -12,20 +12,20 @@ const Carousel = () => {
   };
 
   return (
-    <div className="md:hidden  w-full h-[350px] overflow-x-auto scrollbar-hide">
-      <div className="flex w-full h-[300px]  overflow-x-hidden">
+    <div className="md:hidden  w-full h-[400px]  content-center  overflow-x-auto scrollbar-hide">
+      <div className="flex w-full   overflow-x-hidden">
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-[200px] h-[300px] flex-shrink-0"
+            className="flex-shrink-0"
             style={{
               transform: `translateX(${-currentIndex * 200}px)`,
             }}
           >
-            <div className="w-[250px] h-[250px] m-5">
+            <div className="w-[210px] m-5">
               <Link to={`/salarycard/${index}`}>
                 <img
-                  className="object-contain w-full h-full rounded-md"
+                  className="object-contain w-[300px] h-[300px] rounded-md"
                   src={image}
                   alt={`card${index + 1}`}
                 />
@@ -34,7 +34,7 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <div className=" inset-x-0 bottom-4 flex justify-center space-x-2">
+      <div className=" inset-x-0 bottom-4 flex justify-center items-center space-x-2 pb-20 ">
         {images.map((_, index) => (
           <button
             key={index}

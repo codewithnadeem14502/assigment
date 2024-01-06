@@ -11,7 +11,7 @@ import shareImage from "../assets/newshare.png";
 import { Historydata } from "../components/Historydata";
 import DragDetails from "./DragDetails";
 import Draggable from "react-draggable";
-
+import { motion } from "framer-motion";
 const Details = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -36,9 +36,11 @@ const Details = () => {
           <FaArrowLeft className="text-white mb-2" />
         </button>
         <h1 className="text-2xl font-poppins font-bold text-white">Salary</h1>
-        <h1 className="text-2xl font-poppins font-bold text-white">Card</h1>
+        <h1 className="text-2xl font-poppins font-bold text-white mb-5">
+          Card
+        </h1>
       </div>
-      <div className="my-5">
+      <motion.div initial={{ rotate: "0deg" }} animate={{ rotate: "360deg" }}>
         {id == 0 ? (
           <img
             className="object-contain w-full h-full rounded-md"
@@ -50,14 +52,14 @@ const Details = () => {
         ) : (
           <img
             className="object-contain w-full h-full rounded-md"
-            src={isHovered ? hoversalarycard2 : salarycard2}
+            src={isHovered ? hoversalarycard : salarycard2}
             alt="salarycard"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
         )}
-      </div>
-      <div className="flex justify-between items-center mb-5">
+      </motion.div>
+      <div className="flex justify-between items-center my-5">
         <div className="">
           <h2 className="font-semibold font-poppins text-gray-500">Balance</h2>
           <h1 className="text-2xl font-poppins font-bold text-white">
@@ -70,9 +72,9 @@ const Details = () => {
         </div>
       </div>
       <Draggable axis="y">
-        <div className="md:hidden  bg-blue-900 w-[280px] h-[450px] mb-10 overflow-scroll ">
+        <div className="md:hidden  bg-blue-900 w-full h-[450px] mb-10 overflow-scroll ">
           <div className="flex justify-center items-center text-center w-full">
-            <button className="flex -mb-2">
+            <button className="flex mb-5">
               <MdOutlineDragHandle className="text-3xl text-white" />
               <MdOutlineDragHandle className="text-3xl text-white" />
             </button>

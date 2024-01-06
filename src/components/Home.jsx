@@ -37,9 +37,8 @@ const Home = () => {
           </div>
         </div>
         {/* cards */}
-        <div className="w-full h-[350px]  ">
-          <Carousel />
-        </div>
+
+        <Carousel />
       </div>
     </>
   );
