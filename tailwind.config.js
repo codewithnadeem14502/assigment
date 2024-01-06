@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
@@ -23,6 +22,18 @@ export default {
       backgroundColor: {
         "blue-900": "rgba(49, 60, 92, 1)",
         "blue-500": "rgba(93, 158, 255, 1)",
+        "blue-600": "rgba(19, 27, 49, 0.92)",
+        "purple-500": "rgba(119, 81, 253, 1)",
+      },
+
+      scrollbar: {
+        none: {
+          scrollbarWidth: "none",
+          "-ms-overflow-style": "none",
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        },
       },
     },
   },

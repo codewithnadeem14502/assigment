@@ -10,7 +10,10 @@ const Home = () => {
         </h1>
       </div>
 
-      <div className="md:hidden bg-blue-900 w-full h-screen p-5 mb-10">
+      <div
+        className="md:hidden bg-blue-900 w-full mobile:h-[840px] 
+      bigmobile:h-[950px]  p-5 "
+      >
         {/* txt-content + profile image */}
         <div className="flex justify-between content-center">
           {/* text  */}

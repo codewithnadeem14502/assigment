@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="md:hidden fixed bottom-0 left-0 w-full bg-blue-900 text-white p-3 flex justify-center items-center rounded-t-4xl"
+      className="md:hidden fixed bottom-0 left-0 w-full bg-blue-600 text-white p-5 flex justify-center items-center rounded-t-full"
       style={{ zIndex: 10 }}
     >
       <div className="flex space-x-10">
@@ -44,12 +44,12 @@ const Navbar = () => {
 };
 
 const NavLink = ({ to, icon, label, currentPath }) => {
-  const isActive = currentPath === to;
+  const isActive = currentPath === to || (to === "/" && currentPath === "");
 
   return (
     <Link
       to={to}
-      className={`hover:bg-blue-500 p-2 rounded-full relative ${
+      className={`hover:bg-purple-500 p-2 rounded-full relative ${
         isActive ? "active-link" : ""
       }`}
     >

@@ -31,7 +31,7 @@ const Details = () => {
   };
 
   return (
-    <div className="md:hidden bg-blue-900 w-full h-auto p-5 mb-10">
+    <div className="md:hidden bg-blue-900 w-full h-auto p-5 ">
       <div>
         <button onClick={goBack}>
           <FaArrowLeft className="w-8 h-5 text-3xl text-white mb-2" />
