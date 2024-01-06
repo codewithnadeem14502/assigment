@@ -17,9 +17,9 @@ const Home = () => {
         {/* txt-content + profile image */}
         <div className="flex justify-between content-center">
           {/* text  */}
-          <div className="flex-col pt-3">
-            <h1 className="text-4xl font-poppins font-bold text-white">Bank</h1>
-            <h1 className="text-4xl font-poppins font-bold text-white">
+          <div className="flex-col ">
+            <h1 className="text-3xl font-poppins font-bold text-white">Bank</h1>
+            <h1 className="text-3xl font-poppins font-bold text-white">
               Cards
             </h1>
             <h2 className="font-semibold font-poppins text-gray-500">
