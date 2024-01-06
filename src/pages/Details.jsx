@@ -77,7 +77,7 @@ const Details = () => {
         </div>
       </div>
       <Draggable axis="y">
-        <div className="md:hidden  bg-blue-900 w-full h-[450px] mb-10 overflow-scroll ">
+        <div className="md:hidden  bg-blue-900 w-full h-[500px] mb-10 overflow-scroll ">
           <div className="flex justify-center items-center text-center w-full">
             <button className="flex mb-5">
               <MdOutlineDragHandle className="text-3xl text-white" />

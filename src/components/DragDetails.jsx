@@ -7,7 +7,7 @@ const DragDetails = ({ data }) => {
 
   return (
     <div className="mt-2 no-scrollbar">
-      <div className="flex justify-between items-center my-2 ">
+      <div className="flex justify-between items-center my-2  ">
         <div>
           <img src={image_url} alt="image" className="w-15 h-15 rounded-full" />
         </div>

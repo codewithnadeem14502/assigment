@@ -6,14 +6,12 @@ export default {
     screens: {
       mobile: {
         min: "376px",
-        max: "390px", // Adjust this value based on your design needs
+        max: "390px",
       },
       bigmobile: {
         min: "391px",
-        max: "430px", // Adjust this value based on your design needs
+        max: "430px",
       },
-      // 430
-      // 426->table/md
     },
     extend: {
       fontFamily: {
@@ -21,6 +19,10 @@ export default {
       },
       screens: {
         md: "620px",
+      },
+      backgroundColor: {
+        "blue-900": "rgba(49, 60, 92, 1)",
+        "blue-500": "rgba(93, 158, 255, 1)",
       },
     },
   },
