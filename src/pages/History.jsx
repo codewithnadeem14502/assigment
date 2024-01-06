@@ -1,6 +1,6 @@
 import profile from "../assets/profile.jpeg";
-import HistoryCard from "./HistoryCard";
-import { Historydata } from "./Historydata";
+import HistoryCard from "../components/HistoryCard";
+import { Historydata } from "../Dummydata/Historydata";
 const History = () => {
   return (
     <div className="bg-blue-900 w-full h-full p-5 pb-16">

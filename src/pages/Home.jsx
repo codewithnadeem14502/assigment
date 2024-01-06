@@ -1,5 +1,5 @@
 import profile from "../assets/profile.jpeg";
-import Carousel from "./Carousel";
+import Carousel from "../components/Carousel";
 
 const Home = () => {
   return (
@@ -15,11 +15,9 @@ const Home = () => {
         <div className="flex justify-between content-center">
           {/* text  */}
           <div className="flex-col pt-3">
+            <h1 className="text-3xl font-poppins font-bold text-white">Bank</h1>
             <h1 className="text-3xl font-poppins font-bold text-white">
-              Bank{" "}
-            </h1>
-            <h1 className="text-3xl font-poppins font-bold text-white">
-              Cards{" "}
+              Cards
             </h1>
             <h2 className="font-semibold font-poppins text-gray-500">
               Balance
@@ -37,7 +35,6 @@ const Home = () => {
           </div>
         </div>
         {/* cards */}
-
         <Carousel />
       </div>
     </>

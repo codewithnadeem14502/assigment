@@ -1,6 +1,6 @@
 import profile from "../assets/profile.jpeg";
-import CatalogCard from "./CatalogCard";
-import { CatalogData } from "./CatalogData";
+import CatalogCard from "../components/CatalogCard";
+import { CatalogData } from "../Dummydata/CatalogData";
 const Catalog = () => {
   return (
     <div className="bg-blue-900 w-full h-screen p-5 pb-10">

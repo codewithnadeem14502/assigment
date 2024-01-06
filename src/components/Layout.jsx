@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import Card from "./Card";
-import Catalog from "./Catalog";
-import History from "./History";
-import PageNotFound from "./PageNotFound";
+import Home from "../pages/Home";
+import Catalog from "../pages/Catalog";
+import History from "../pages/History";
+import PageNotFound from "../pages/PageNotFound";
+import Details from "../pages/Details";
 import Navbar from "./Navbar";
-import Details from "./Details";
 
 const Layout = () => {
   return (
@@ -13,7 +12,7 @@ const Layout = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/card" element={<Card />} />
+
         <Route path="/history" element={<History />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="salarycard/:id" element={<Details />} />

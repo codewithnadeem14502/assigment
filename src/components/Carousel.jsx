@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import card1 from "../assets/card.jpeg";
 import card2 from "../assets/card2.png";
-import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const images = [card1, card2];

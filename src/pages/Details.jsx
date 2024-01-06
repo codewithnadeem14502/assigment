@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdOutlineDragHandle } from "react-icons/md";
+import { motion } from "framer-motion";
+import { Historydata } from "../Dummydata/Historydata";
 import salarycard from "../assets/salarycard.png";
 import salarycard2 from "../assets/salarycard2.png";
 import hoversalarycard2 from "../assets/hoversalarycard2.png";
 import hoversalarycard from "../assets/hoversalarycard.png";
 import historyImage from "../assets/historyfull.png";
 import shareImage from "../assets/newshare.png";
-import { Historydata } from "../components/Historydata";
-import DragDetails from "./DragDetails";
+import DragDetails from "../components/DragDetails";
 import Draggable from "react-draggable";
-import { motion } from "framer-motion";
+
 const Details = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
   const goBack = () => {
-    navigate(-1); // Navigate back
+    navigate(-1);
   };
   const [isHovered, setIsHovered] = useState(false);
 
