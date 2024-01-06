@@ -12,20 +12,20 @@ const Carousel = () => {
   };
 
   return (
-    <div className="md:hidden  w-full h-[400px]  content-center  overflow-x-auto scrollbar-hide">
+    <div className="md:hidden  w-full h-[450px] mt-10    content-center  overflow-x-auto scrollbar-hide mobile:h-[550px] bigmobile:h-[650px] bigmobile:mt-0 ">
       <div className="flex w-full   overflow-x-hidden">
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex-shrink-0"
+            className="flex-shrink-0 h-[370px] mobile:h-[500px]  bigmobile:h-[550px]"
             style={{
               transform: `translateX(${-currentIndex * 200}px)`,
             }}
           >
-            <div className="w-[210px] m-5">
+            <div className="w-[210px] mobile:w-[250px] bigmobile:w-[250px] m-5">
               <Link to={`/salarycard/${index}`}>
                 <img
-                  className="object-contain w-[300px] h-[300px] rounded-md"
+                  className="object-contain w-[300px] h-[320px] mobile:h-[500px]  bigmobile:h-[520px] rounded-md"
                   src={image}
                   alt={`card${index + 1}`}
                 />
@@ -34,14 +34,14 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <div className=" inset-x-0 bottom-4 flex justify-center items-center space-x-2 pb-20 ">
+      <div className=" inset-x-0 bottom-4 flex justify-center items-center space-x-2  pb-20">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => changeImage(index)}
             className={`${
               index === currentIndex ? "bg-white" : "bg-gray-300"
-            } w-8 h-1 rounded-full focus:outline-none`}
+            } w-8 h-1 bigmobile:w-12 rounded-full focus:outline-none`}
           ></button>
         ))}
       </div>

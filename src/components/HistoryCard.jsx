@@ -6,7 +6,7 @@ const HistoryCard = ({ data }) => {
     <div className="  my-2">
       <div className="flex  justify-between items-center ">
         <div>
-          <img src={image_url} alt="image" className="w-10 h-10 rounded-full" />
+          <img src={image_url} alt="image" className="w-15 h-15 rounded-full" />
         </div>
         <div className=" w-1/2">
           <h2 className="text-white text-lg">{heading}</h2>

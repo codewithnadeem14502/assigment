@@ -34,14 +34,18 @@ const Details = () => {
     <div className="md:hidden bg-blue-900 w-full h-auto p-5 mb-10">
       <div>
         <button onClick={goBack}>
-          <FaArrowLeft className="text-white mb-2" />
+          <FaArrowLeft className="w-8 h-5 text-3xl text-white mb-2" />
         </button>
-        <h1 className="text-2xl font-poppins font-bold text-white">Salary</h1>
-        <h1 className="text-2xl font-poppins font-bold text-white mb-5">
+        <h1 className="text-3xl font-poppins font-bold text-white">Salary</h1>
+        <h1 className="text-3xl font-poppins font-bold text-white mb-5">
           Card
         </h1>
       </div>
-      <motion.div initial={{ rotate: "0deg" }} animate={{ rotate: "360deg" }}>
+      <motion.div
+        initial={{ rotate: "-50deg" }}
+        animate={{ rotate: "0deg" }}
+        transition={{ duration: 1, frame: 20 }}
+      >
         {id == 0 ? (
           <img
             className="object-contain w-full h-full rounded-md"

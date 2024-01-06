@@ -49,7 +49,7 @@ const NavLink = ({ to, icon, label, currentPath }) => {
   return (
     <Link
       to={to}
-      className={`hover:bg-rgba-primary p-2 rounded-full relative ${
+      className={`hover:bg-blue-500 p-2 rounded-full relative ${
         isActive ? "active-link" : ""
       }`}
     >

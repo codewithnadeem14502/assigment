@@ -15,17 +15,19 @@ const Home = () => {
         <div className="flex justify-between content-center">
           {/* text  */}
           <div className="flex-col pt-3">
-            <h1 className="text-3xl font-poppins font-bold text-white">Bank</h1>
-            <h1 className="text-3xl font-poppins font-bold text-white">
+            <h1 className="text-4xl font-poppins font-bold text-white">Bank</h1>
+            <h1 className="text-4xl font-poppins font-bold text-white">
               Cards
             </h1>
             <h2 className="font-semibold font-poppins text-gray-500">
               Balance
             </h2>
-            <h1 className="font-bold font-poppins text-white">$2,7480.00</h1>
+            <h1 className="font-bold text-2xl font-poppins text-white">
+              $2,7480.00
+            </h1>
           </div>
           <div>
-            <div>
+            <div className="mt-5">
               <img
                 className="w-10 h-10 rounded-full"
                 src={profile}
