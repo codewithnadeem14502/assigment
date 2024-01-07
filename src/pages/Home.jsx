@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/Ellipse 1.jpg";
 import Carousel from "../components/Carousel";
 
 const Home = () => {

@@ -17,11 +17,23 @@ const Details = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const goBack = () => {
-    navigate(-1);
-  };
   const [isHovered, setIsHovered] = useState(false);
-
+  const [animationState, setAnimationState] = useState({
+    initial: "-50deg",
+    animate: "0deg",
+  });
+  const goBack = () => {
+    setAnimationState({ initial: "0deg", animate: "-100deg" });
+    setTimeout(() => {
+      navigate(-1);
+    }, 1000);
+  };
+  {
+    console.log({
+      initial: animationState.initial,
+      animate: animationState.animate,
+    });
+  }
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -42,9 +54,9 @@ const Details = () => {
         </h1>
       </div>
       <motion.div
-        initial={{ rotate: "-50deg" }}
-        animate={{ rotate: "0deg" }}
-        transition={{ duration: 1, frame: 20 }}
+        initial={{ rotate: animationState.initial }}
+        animate={{ rotate: animationState.animate }}
+        transition={{ duration: 2, frame: 50 }}
       >
         {id == 0 ? (
           <img

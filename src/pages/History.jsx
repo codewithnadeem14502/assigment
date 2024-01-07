@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/Ellipse 1.jpg";
 import HistoryCard from "../components/HistoryCard";
 import { Historydata } from "../Dummydata/Historydata";
 const History = () => {

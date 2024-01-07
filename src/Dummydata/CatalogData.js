@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/Ellipse 1.jpg";
 import mobilImage from "../assets/Mobile.svg";
 import wifi from "../assets/wifi.svg";
 import light from "../assets/light.svg";

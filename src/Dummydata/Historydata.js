@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/mainprofile.jpg";
 import uber from "../assets/uber.svg";
 import applemusic from "../assets/applemusic.svg";
 import historycard from "../assets/historycard.png";
