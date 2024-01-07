@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="md:hidden fixed bottom-0 left-0 w-full bg-blue-600 text-white p-5 flex justify-center items-center rounded-t-full"
+      className="md:hidden fixed bottom-0 left-0 w-full bg-blue-600 text-white p-5 flex justify-center items-center rounded-t-3xl"
       style={{ zIndex: 10 }}
     >
       <div className="flex space-x-10">

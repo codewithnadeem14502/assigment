@@ -22,7 +22,7 @@ export default {
       backgroundColor: {
         "blue-900": "rgba(49, 60, 92, 1)",
         "blue-500": "rgba(93, 158, 255, 1)",
-        "blue-600": "rgba(19, 27, 49, 0.92)",
+        "blue-600": "rgba(45, 55, 87, 4)",
         "purple-500": "rgba(119, 81, 253, 1)",
       },
 
